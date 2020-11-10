@@ -7,9 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="asset/images/favicon.png"><!-- 아이폰 바로가기 아이콘 -->
     <link rel="shortcut icon" href="asset/images/favicon.png"><!-- 안드로이드폰 바로가기 아이콘 -->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+    <link rel="stylesheet" href="asset/css/swiper-bundle.css">
     <link rel="stylesheet" href="asset/css/common.css">
+    <link rel="stylesheet" href="asset/css/main.css">
+    <script src="asset/js/jquery-1.12.4.min.js"></script>
+    <script src="asset/js/swiper-bundle.min.js"></script>
+    <script src="asset/js/common.js"></script>
+    <script src="asset/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body>
@@ -17,8 +22,8 @@
         <header id="header">
             <h1 class="logo">
                 <a href="index.html" aria-label="단">
-                    <img src="asset/images/common/logo.png" alt="단" srcset="asset/images/common/logox2.png 2x,
-                    asset/images/common/logox3.png 3x">
+                    <img class="center" src="asset/images/common/logo.png" alt="단" srcset="asset/images/common/logo2x.png 2x,
+                    asset/images/common/logo3x.png 3x">
                 </a>
             </h1>
             <button class="btn_menu">
@@ -28,12 +33,12 @@
                 <span class="line btm"></span>
             </button>
 
-            <div class="navigation">
+            <div id="navigation" class="f_r">
                 <div class="topNav">
                     <button class="btn_close">
                         <span class="blind-b">메뉴닫기</span>
-                        <span class="line left"></span>
-                        <span class="line right"></span>
+                        <span class="lineS left"></span>
+                        <span class="lineS right"></span>
                     </button>
                     <ul class="membership">
                         <li>
@@ -43,27 +48,26 @@
                             <a href="">SIGN UP</a>
                         </li>
                     </ul>
-                    <div class="redR"></div>
-                    <div class="yellowR"></div>
-                    <div class="blueC"></div>
-                    <ul>
+                        <img width="88" class="blueC" src="asset/images/common/circle.svg" alt="">
+                        <img width="140" src="asset/images/common/red.svg" alt="">
+                        <img width="158" src="asset/images/common/yellow.svg" alt="">
+                    <ul class="">
                         <li>
                             <a href="" target="_blank" title="단 페이스북 계정 바로가기">
                                 <i class="fab fa-facebook-square"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="" target="_blank" title="인스타그램 새창열기">
-                                <svg></svg>
+                            <a href="" target="_blank" title="단 인스타그램 계정 바로가기">
+                                <i class="fab fa-instagram-square"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="" target="_blank" title="트위터 새창열기">
-                                <svg></svg>
+                            <a href="" target="_blank" title="단 트위터 계정 바로가기">
+                                <i class="fab fa-twitter-square"></i>
                             </a>
                         </li>
                     </ul>
-
                 </div>
                 <nav id="gnb">
                     <ul>
@@ -78,16 +82,29 @@
         </header>
         <section id="content" role="main">
             <h2 class="blind-b">단</h2>
-            <article class="top_visual">
-                <div class="bxslider">
-                    <div><img src="asset/images/index/index1.png" alt="창 밖을 보는 세명의 사람" srcset="asset/images/index/index12x.png 2x, asset/images/index/index13x.png 3x"></div>
-                    <div><img src="asset/images/index/index2.png" alt="앞을 보고있는 거대한 사람" srcset="asset/images/index/index22x.png 2x, asset/images/index/index23x.png 3x"></div>
-                    <div><img src="asset/images/index/index4.png" alt="바다 풍경" srcset="asset/images/index/index42x.png 2x, asset/images/index/index43x.png 3x"></div>
-                    <div><img src="asset/images/index/index3.png" alt="활을 쏘고있는 거대한 사람" srcset="asset/images/index/index32x.png 2x, asset/images/index/index33x.png 3x"></div>
-                  </div>
+            <article class="main_visual">
+                <div class="swiper-container p_r">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide pic1"></div>
+                        <div class="swiper-slide pic2"><p class="blind-b"></p></div>
+                        <div class="swiper-slide pic3"><p class="blind-b"></p></div>
+                        <div class="swiper-slide pic4"><p class="blind-b"></p></div>
+                      </div>
+                       <div class="controller">
+                       	<!-- If we need pagination -->
+                       	<div class="swiper-pagination"></div>
+                       	<!-- play, stop 버튼 -->
+                       	 <button class="autoplay play_stop" title="재생">
+                       	     <span class="blind-b">재생</span>
+                       	 </button>
+                       	 <button class="autostop play_stop" title="일시정지">
+                       	     <span class="blind-b">일시정지</span>
+                       	 </button>
+                       </div>
+                </div>
             </article>
             <article class="exhibition">
-                <h3>EXHIBITION</h3>
+                <h3 class="title mt70">EXHIBITION</h3>
                 <!-- Slider main container -->
                     <div class="swiper-container">
                         <!-- 슬라이더 상세 내용 -->
@@ -105,11 +122,13 @@
                         <div class="swiper-pagination"></div>
 
                         <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                        <div class="btnGroup">
+                            <div class="swiper-button-prev smallBt"></div>
+                            <div class="swiper-button-next smallBt"></div>
+                        </div>
             </article>
             <article class="artists">
-                <h3>ARTISTS</h3>
+                <h3 class="title mt90">ARTISTS</h3>
                 <!-- Slider main container -->
                     <div class="swiper-container">
                         <!-- 슬라이더 상세 내용 -->
@@ -154,10 +173,10 @@
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
             </article>
-            <footer id="footer">
-                <p>&copy;Dan Rights Reserved</p>
-            </footer>
         </section>
+                <footer id="footer">
+                    <p>&copy;Dan Rights Reserved</p>
+                </footer>
     </div>
 </body>
 

@@ -1,0 +1,66 @@
+@charset "utf-8";
+@import "_mixin", "_var"; 
+
+.main_visual{
+    .swiper-container { 
+        height: 100%; 
+    .swiper-slide{
+        @include bgsize(cover); 
+        background-image: no-repeat center;height: 100%;display: block;margin-left: auto;margin-right: auto;
+        &.pic1{background-image: url("../images/index/1.png");}
+        &.pic2{background-image: url("../images/index/2.png");}
+        &.pic3{background-image: url("../images/index/3.png");}
+        &.pic4{background-image: url("../images/index/4.png");}  
+    }
+}
+    .controller{
+    @include radius(0 27px 0 0);
+    position: absolute;bottom:72px;left: calc(50% - 37px);height: 19px;width: 74px;background-color: rgba(0, 0,0, 0.5);z-index: 90;
+    .autostop{background-image: url("../images/index/icon/stop.png");}
+    .autoplay{background-image: url("../images/index/icon/play.png");}
+    .play_stop{width: 12px;height: 12px;position: absolute;top: 3px;left: 9px;}
+    .play_stop.active{display: none;}
+    .swiper-pagination-bullet{
+    @include radius(50%);    
+    position: relative;top:-35%;z-index: 91;background-color: #fff;width: 3px;height: 3px;}
+
+}
+}
+@media
+screen and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+    .main_visual .swiper-wrapper .pic1 {background-image: url("../images/index/1@2x.png");}
+    .main_visual .swiper-wrapper .pic2 {background-image: url("../images/index/2@2x.png");}
+    .main_visual .swiper-wrapper .pic3 {background-image: url("../images/index/3@2x.png");}
+    .main_visual .swiper-wrapper .pic4 {background-image: url("../images/index/4@2x.png");}
+  
+}
+@media
+screen and (-webkit-min-device-pixel-ratio: 3),
+screen and (min-resolution: 288dpi),
+screen and (min-resolution: 3dppx) {
+    .main_visual .swiper-wrapper .pic1 {background-image: url("../images/index/1@3x.png");}
+    .main_visual .swiper-wrapper .pic2 {background-image: url("../images/index/2@3x.png");}
+    .main_visual .swiper-wrapper .pic3 {background-image: url("../images/index/3@3x.png");}
+    .main_visual .swiper-wrapper .pic4 {background-image: url("../images/index/4@3x.png");}
+
+}
+
+//index
+
+.exhibition{
+    >.swiper-container{
+        >.swiper-wrapper{
+            display:flex;align-items:center;
+            justify-content:center;width: 100%;
+           strong{
+               display:block;font-size: 14px; line-height: 16px;
+           }
+        }
+        .smallBt{width: 10px;height: 12px;background-image: no-repeat;}
+        .swiper-button-prev::after{background-image: url("../images/index/icon/prev.png");}
+        .swiper-button-next::after{background-image: url("../images/index/icon/next.png");}
+        }
+    
+}

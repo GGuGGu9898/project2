@@ -1,0 +1,203 @@
+@font-face {
+  font-family: NtSansKR;
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/NotoSansKR-Light.eot");
+  src: url("../fonts/NotoSansKR-Light.eot#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-Light.woff2") format("woff2"), url("../fonts/NotoSansKR-Light.woff") format("woff"), url("../fonts/NotoSansKR-Light.otf") format("opentype"); }
+@font-face {
+  font-family: NtSansKR;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/NotoSansKR-Regular.eot");
+  src: url("../fonts/NotoSansKR-Regular.eot#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-Regular.woff2") format("woff2"), url("../fonts/NotoSansKR-Regular.woff") format("woff"), url("../fonts/NotoSansKR-Regular.otf") format("opentype"); }
+@font-face {
+  font-family: NtSansKR;
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/NotoSansKR-Medium.eot");
+  src: url("../fonts/NotoSansKR-Medium.eot#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-Medium.woff2") format("woff2"), url("../fonts/NotoSansKR-Medium.woff") format("woff"), url("../fonts/NotoSansKR-Medium.otf") format("opentype"); }
+@font-face {
+  font-family: NtSansKR;
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/NotoSansKR-Bold.eot");
+  src: url("../fonts/NotoSansKR-Bold.eot#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-Bold.woff2") format("woff2"), url("../fonts/NotoSansKR-Bold.woff") format("woff"), url("../fonts/NotoSansKR-Bold.otf") format("opentype"); }
+@font-face {
+  font-family: Bah;
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/bahnschrift_light.eot");
+  src: url("../fonts/bahnschrift_light.eot#iefix") format("embedded-opentype"), url("../fonts/Bahnschrift_light.woff2") format("woff2"), url("../fonts/Bahnschrift_light.woff") format("woff"), url("../fonts/bahnschrift_light.ttf") format("truetype"); }
+@font-face {
+  font-family: Bah;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/bahnschrift_Regular.eot");
+  src: url("../fonts/bahnschrift_Regular.eot#iefix") format("embedded-opentype"), url("../fonts/Bahnschrift_Regular.woff2") format("woff2"), url("../fonts/Bahnschrift_Regular.woff") format("woff"), url("../fonts/bahnschrift_Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: Bah;
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/bahnschrift_semibold.eot");
+  src: url("../fonts/bahnschrift_semibold.eot#iefix") format("embedded-opentype"), url("../fonts/Bahnschrift_semibold.woff2") format("woff2"), url("../fonts/Bahnschrift_semibold.woff") format("woff"), url("../fonts/bahnschrift_semibold.ttf") format("truetype"); }
+@font-face {
+  font-family: Bah;
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/bahnschrift_bold.eot");
+  src: url("../fonts/bahnschrift_bold.eot#iefix") format("embedded-opentype"), url("../fonts/Bahnschrift_bold.woff2") format("woff2"), url("../fonts/Bahnschrift_bold.woff") format("woff"), url("../fonts/bahnschrift_bold.ttf") format("truetype"); }
+/* reset */
+body, h1, h2, h3, p, strong, ul, button, svg {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3 {
+  font-size: 100%; }
+
+ul {
+  list-style: none; }
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit; }
+
+img {
+  vertical-align: top;
+  border: none; }
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer; }
+
+header, section, article, footer, nav {
+  display: block; }
+
+/* common class */
+.f_l {
+  float: left; }
+
+.f_r {
+  float: right; }
+
+.p_r {
+  position: relative; }
+
+.p_a {
+  position: absolute; }
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.blind-b {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  border: none;
+  clip: 1px, 1px, 1px, 1px;
+  clip-path: inset(50%); }
+
+.center {
+  text-align: center; }
+
+.title {
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 50px; }
+
+.mt70 {
+  margin-top: 70px; }
+
+.mt90 {
+  margin-top: 90px; }
+
+body {
+  font-family: NtSansKR, Bah;
+  color: #000;
+  font-weight: 500; }
+
+#header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 58px; }
+  #header .logo {
+    left: 0; }
+    #header .logo img {
+      position: absolute;
+      top: 12px;
+      left: 14px; }
+  #header .logo, #header .btn_menu {
+    position: fixed;
+    top: 0;
+    width: 58px;
+    height: 58px;
+    background: rgba(0, 0, 0, 0.5); }
+  #header .btn_menu {
+    right: 0; }
+    #header .btn_menu .line {
+      -webkit-border-radius: 0 3px 0 0;
+      border-radius: 0 3px 0 0;
+      position: absolute;
+      right: 13px;
+      width: 30px;
+      height: 3px;
+      background: #ffffff; }
+    #header .btn_menu .top {
+      top: 18px; }
+    #header .btn_menu .mid {
+      top: 27px; }
+    #header .btn_menu .btm {
+      top: 36px; }
+
+#navigation {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 80%;
+  background: pink;
+  overflow-y: auto;
+  z-index: 1000; }
+  #navigation > div {
+    position: relative;
+    top: 0;
+    height: 60vh; }
+    #navigation > div.btn_close {
+      position: relative;
+      top: 15px;
+      left: 15px;
+      width: 24px;
+      height: 24px;
+      z-index: 2000; }
+      #navigation > div.btn_close > .lineS {
+        -webkit-border-radius: 0 3px 0 0;
+        border-radius: 0 3px 0 0;
+        background: #fff;
+        width: 30px;
+        height: 3px; }
+        #navigation > div.btn_close > .lineS .left {
+          -webkit-transform: rotate 30deg;
+          transform: rotate 30deg; }
+        #navigation > div.btn_close > .lineS .right {
+          -webkit-transform: rotate -30deg;
+          transform: rotate -30deg; }
+  #navigation > nav {
+    position: relative;
+    bottom: 0;
+    height: 40vh; }
+
+#footer {
+  height: 106px;
+  background-color: #000;
+  color: #fff;
+  font-size: 9px;
+  text-align: center;
+  line-height: 106px; }
+
+/*# sourceMappingURL=common.css.map */
