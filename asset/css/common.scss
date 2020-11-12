@@ -101,33 +101,32 @@ header, section, article, footer, nav {display: block;}
 .clearfix::after{content: ""; display: block; clear: both;}
 .blind-b{width:1px;height: 1px;position: absolute;overflow: hidden; border: none;clip:(1px, 1px, 1px, 1px);clip-path: inset(50%);}
 .center{text-align: center;}
-.title{text-align: center;font-size: 18px;line-height: 26px;margin-bottom: 50px;}
-.mt70{margin-top: 70px;}
-.mt90{margin-top: 90px;}
+.title{text-align: center;font-size: 5vw;line-height: 26px;margin-bottom: 13.88888888888889vw;}
+.mt70{margin-top: 19.44444444444444vw;}
+.mt90{margin-top: 25vw;}
 
-body{font-family: NtSansKR, Bah; color: #000; font-weight: 500;}
+body{font-family: NtSansKR, Bah; color: #000; font-weight: 500;word-break: keep-all;}
 
 #header{
-    position:fixed;z-index:100;width: 100%;height: 58px;
+    position:fixed;z-index:100;width: 100%;height: 15.55555555555556vw;
     .logo{left: 0;
-    & img{position: absolute; top: 12px;left: 14px;}
+    img{position: absolute; top: 3.333333333333333vw;left: 3.888888888888889vw;width: 8.055555555555556vw;}
     }
-    .logo, .btn_menu{position: fixed;top: 0;width: 58px;height: 58px;background: rgba(0, 0, 0, 0.5);}
+    .logo, .btn_menu{position: fixed;top: 0;width: 15.55555555555556vw;height: 15.55555555555556vw;background: rgba(0, 0, 0, 0.5);}
 
     .btn_menu{right: 0;
         & .line{
-         @include radius(0 3px 0 0);
-         position: absolute; right: 13px;width: 30px; height: 3px;background: #ffffff; 
+         @include radius(0 0.8333333333333333vw 0 0);
+         position: absolute; right: 3.611111111111111vw;width: 8.333333333333333vw; height: 0.8333333333333333vw;background: #ffffff; 
         }
-        .top{top: 18px;}
-        .mid{top: 27px;}
-        .btm{top: 36px;}
-        &.active{
+        .top{top: 5vw;}
+        .mid{top: 7.5vw;}
+        .btm{top: 10vw;}
            
         }
     }
 
-} 
+
 
 .opacity{
     display: none;position: fixed;top: 0;right: 0;height: 100vh;z-index: 1000;width: 100%;background: rgba(0, 0, 0, .8);
@@ -170,30 +169,28 @@ body{font-family: NtSansKR, Bah; color: #000; font-weight: 500;}
                 }
             }
         .btn_close{
-            position: relative; top: 15px;left: 15px;width: 24px;height: 24px;z-index: 2000;
+            position: relative; top: 4.166666666666667vw;left: 4.166666666666667vw;z-index: 2000;
+            img{width: 6.666666666666667vw;height: 6.666666666666667vw;}
         }
         .membership{
-            float: right; margin:20px 17px;
-            li{float: left;margin:5px;
-                li:first-child::after{content:"";
-                   position: absolute;right:-8px;width: 1px;height: 12px;background: #000;margin-left: 5px;
-                   a{font-size: 5px;}
-                }
+            float: right; margin:5.555555555555556vw 4.722222222222222vw;
+            li{float: left;margin:1.388888888888889vw;
+                a{font-size: 1.3888888vw;}
             }
         }
         .snsList{
-            float: right;position: absolute;bottom: 5px;right: 15px;
+            float: right;position: absolute;bottom: 1.388888vw;right: 15px;
             li{
                 float: left;
             }
-            li+li{margin-left: 5px;}
+            li+li{margin-left: 1.388888vw;}
             }
         
     }
     nav{
         position: relative;bottom: 0;height: 40vh;
-        ul{padding: 20px 20px 0px;
-            li{line-height: 30px;font-size: 30px;margin-bottom: 18px;text-align: right;font-weight: 600;
+        ul{padding: 5.333333333333333vw;
+            li{line-height: 8vw;font-size: 8vw;margin-bottom: 4.8vw;text-align: right;font-weight: 600;
             }
             
 
@@ -202,4 +199,4 @@ body{font-family: NtSansKR, Bah; color: #000; font-weight: 500;}
 
     }   
  #footer{
-        height: 106px;background-color: #000;color: #fff;font-size: 9px; text-align: center;line-height: 106px;}
+        height: 29.44444444444444vw; background-color: #000;color: #fff;font-size: $font9; text-align: center;line-height: 29.44444444444444vw;}

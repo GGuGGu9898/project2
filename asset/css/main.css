@@ -79,13 +79,13 @@
   .main_visual .swiper-wrapper .pic4 {
     background-image: url("../images/index/4@3x.png"); } }
 .exhibition > .swiper-container {
-  padding-bottom: 50px; }
+  padding-bottom: 13.33333vw; }
   .exhibition > .swiper-container .swiper-wrapper .swiper-slide {
     text-align: center; }
   .exhibition > .swiper-container .swiper-wrapper strong {
     position: absolute;
-    bottom: -44px;
-    right: 99px;
+    bottom: -12.6302083vw;
+    right: 26.4vw;
     display: inline-block;
     width: 104px;
     height: 18px;
@@ -94,38 +94,40 @@
     background-image: url("../images/index/icon/box.png");
     color: #fff;
     font-weight: 400; }
+  .exhibition > .swiper-container .swiper-wrapper img {
+    width: 60vw; }
   .exhibition > .swiper-container .silderController {
     height: 18px;
     display: inline-block;
     position: absolute;
     bottom: 15px;
-    right: 99px;
+    right: 26.4vw;
     z-index: 1; }
     .exhibition > .swiper-container .silderController .btnGroup {
       position: absolute;
       bottom: 0; }
       .exhibition > .swiper-container .silderController .btnGroup .swiper-button-prev {
-        left: -216px; }
+        left: -57.6vw; }
       .exhibition > .swiper-container .silderController .btnGroup .swiper-button-next {
-        right: -36px; }
+        right: -9.6vw; }
     .exhibition > .swiper-container .silderController .swiper-pagination {
       font-size: 10px;
       width: 80px;
       bottom: -7px;
-      left: -193px; }
+      left: -51.46666vw; }
   .exhibition > .swiper-container .swiper-button-prev:after, .exhibition > .swiper-container .swiper-button-next:after {
     display: none; }
 
 .artists {
   padding-bottom: 81px; }
   .artists > .swiper-container {
-    padding-bottom: 50px; }
+    padding-bottom: 13.33333vw; }
     .artists > .swiper-container .swiper-wrapper .swiper-slide {
       text-align: center; }
     .artists > .swiper-container .swiper-wrapper strong {
       position: absolute;
-      bottom: -44px;
-      right: 99px;
+      bottom: -12.6302083vw;
+      right: 26.4vw;
       display: inline-block;
       width: 104px;
       height: 18px;
@@ -134,25 +136,27 @@
       background-image: url("../images/index/icon/box.png");
       color: #fff;
       font-weight: 400; }
+    .artists > .swiper-container .swiper-wrapper img {
+      width: 60vw; }
     .artists > .swiper-container .silderController {
       height: 18px;
       display: inline-block;
       position: absolute;
       bottom: 15px;
-      right: 99px;
+      right: 26.4vw;
       z-index: 1; }
       .artists > .swiper-container .silderController .btnGroup {
         position: absolute;
         bottom: 0; }
         .artists > .swiper-container .silderController .btnGroup .swiper-button-prev {
-          left: -216px; }
+          left: -57.6vw; }
         .artists > .swiper-container .silderController .btnGroup .swiper-button-next {
-          right: -36px; }
+          right: -9.6vw; }
       .artists > .swiper-container .silderController .swiper-pagination {
         font-size: 10px;
         width: 80px;
         bottom: -7px;
-        left: -193px; }
+        left: -51.46666vw; }
     .artists > .swiper-container .swiper-button-prev:after, .artists > .swiper-container .swiper-button-next:after {
       display: none; }
 

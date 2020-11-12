@@ -59,22 +59,23 @@ screen and (min-resolution: 3dppx) {
 
 .exhibition{
     >.swiper-container{
-        padding-bottom: 50px;
+        padding-bottom: 13.33333vw;
         .swiper-wrapper{
             .swiper-slide{
            text-align: center;
             }
            strong{
-               position: absolute;bottom: -44px;right: 99px;display:inline-block;width: 104px;height: 18px;font-size: 12px; line-height: 18px;background-image: url("../images/index/icon/box.png");color: #fff;font-weight: 400;
+               position: absolute;bottom: -12.6302083vw;right: 26.4vw;display:inline-block;width: 104px;height: 18px;font-size: 12px; line-height: 18px;background-image: url("../images/index/icon/box.png");color: #fff;font-weight: 400;
            }
+           img{width: 60vw;}
         }
-        .silderController{height: 18px;display: inline-block;position: absolute;bottom: 15px;right: 99px;z-index: 1;
+        .silderController{height: 18px;display: inline-block;position: absolute;bottom: 15px;right: 26.4vw;z-index: 1;
             .btnGroup{
-                .swiper-button-prev{left: -216px;}
-                .swiper-button-next{right: -36px;}
+                .swiper-button-prev{left: -57.6vw;}
+                .swiper-button-next{right: -9.6vw;}
                 position: absolute;bottom: 0;
             }
-          .swiper-pagination{font-size: 10px;width: 80px;bottom: -7px;left: -193px;}
+          .swiper-pagination{font-size: 10px;width: 80px;bottom: -7px;left: -51.46666vw;}
         }
          .swiper-button-prev:after, .swiper-button-next:after{display: none;}
      }
@@ -82,22 +83,23 @@ screen and (min-resolution: 3dppx) {
 .artists{
         padding-bottom: 81px;
         >.swiper-container{
-            padding-bottom: 50px;
+            padding-bottom: 13.33333vw;
             .swiper-wrapper{
                 .swiper-slide{
                text-align: center;
                 }
                strong{
-                   position: absolute;bottom: -44px;right: 99px;display:inline-block;width: 104px;height: 18px;font-size: 12px; line-height: 18px;background-image: url("../images/index/icon/box.png");color: #fff;font-weight: 400;
+                position: absolute;bottom: -12.6302083vw;right: 26.4vw;display:inline-block;width: 104px;height: 18px;font-size: 12px; line-height: 18px;background-image: url("../images/index/icon/box.png");color: #fff;font-weight: 400;
                }
+               img{width: 60vw;}
             }
-            .silderController{height: 18px;display: inline-block;position: absolute;bottom: 15px;right: 99px;z-index: 1;
+            .silderController{height: 18px;display: inline-block;position: absolute;bottom: 15px;right: 26.4vw;z-index: 1;
                 .btnGroup{
-                    .swiper-button-prev{left: -216px;}
-                    .swiper-button-next{right: -36px;}
+                    .swiper-button-prev{left: -57.6vw;}
+                    .swiper-button-next{right: -9.6vw;}
                     position: absolute;bottom: 0;
                 }
-              .swiper-pagination{font-size: 10px;width: 80px;bottom: -7px;left: -193px;}
+              .swiper-pagination{font-size: 10px;width: 80px;bottom: -7px;left: -51.46666vw;}
             }
              .swiper-button-prev:after, .swiper-button-next:after{display: none;}
          }

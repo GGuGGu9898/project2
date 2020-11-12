@@ -80,38 +80,37 @@
     background-image: url("../images/exhibition/4@3x.png"); } }
 .exOne .smTit {
   display: block;
-  padding-top: 26px;
-  font-size: 9px; }
+  padding-top: 7.22222vw;
+  font-size: 2.5vw; }
 .exOne .bar {
   position: absolute;
   left: 50%;
-  margin: 13px 0 5px 0;
+  margin: 3.611111vw 0 1.38888vw 0;
   width: 1px;
-  height: 51px; }
+  height: 14.16666666666667vw;
+  background: #000; }
 .exOne h3 {
-  padding-top: 76px;
-  line-height: 27px;
-  font-size: 22px;
-  letter-spacing: 4px;
-  margin-bottom: 30px; }
+  padding-top: 21.11111vw;
+  line-height: 7.5vw;
+  font-size: 6.1vw;
+  letter-spacing: 1.11111vw;
+  margin-bottom: 12vw; }
 .exOne .intro {
   width: 100%; }
 .exOne .introP {
-  font-size: 11px;
-  line-height: 16px;
-  width: 100%;
-  display: inline-block;
-  position: relative; }
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+  font-size: 3.0555555556vw;
+  line-height: 1.45455;
+  padding: 6.11111% 8.61111%;
+  background: url("../images/exhibition/bg1.svg") no-repeat left center; }
+  .exOne .introP p {
+    width: 42.61745%; }
   .exOne .introP p:nth-child(1) {
-    position: absolute;
-    top: 22px;
-    left: 10%;
-    width: 50%; }
+    float: left; }
   .exOne .introP p:nth-child(2) {
-    position: absolute;
-    top: 22px;
-    right: 10%;
-    width: 30%; }
+    float: right;
+    position: relative; }
   .exOne .introP p:nth-child(2)::after {
     content: "";
     background: url("../images/exhibition/square.png");
@@ -120,54 +119,67 @@
     right: 0;
     width: 28px;
     height: 10px; }
-.exOne .bg1 {
-  padding-top: -20px; }
 .exOne .swiper-container {
-  width: 100%;
-  height: 100%; }
-  .exOne .swiper-container .swiper-slide img {
-    width: 100%;
-    margin-bottom: 16px; }
-  .exOne .swiper-container .swiper-slide strong {
-    color: #fff;
-    font-size: 11px;
-    line-height: 18px;
-    background: url("../images/exhibition/squareBk.png") no-repeat center;
-    width: 108px;
-    height: 18px;
-    display: inline-block;
-    text-align: center;
-    font-weight: 400;
-    margin-left: 55%; }
+  width: 100%; }
+  .exOne .swiper-container .swiper-slide {
+    position: relative; }
+    .exOne .swiper-container .swiper-slide img {
+      width: 100%; }
+    .exOne .swiper-container .swiper-slide strong {
+      position: absolute;
+      color: #fff;
+      font-size: 11px;
+      line-height: 18px;
+      background: url("../images/exhibition/squareBk.png") no-repeat center;
+      width: 108px;
+      height: 18px;
+      display: inline-block;
+      text-align: center;
+      font-weight: 400;
+      margin-left: 55%;
+      bottom: -32px;
+      right: 20%; }
   .exOne .swiper-container .silderController {
     position: relative; }
+    .exOne .swiper-container .silderController::before {
+      -webkit-background-size: 36% auto !important;
+      background-size: 36% auto !important;
+      content: "";
+      display: block;
+      padding-top: 16.66666666666667%;
+      background: url("../images/exhibition/bg2.svg") no-repeat right center; }
     .exOne .swiper-container .silderController .swiper-pagination {
       font-size: 10px;
       position: absolute;
-      top: -18px;
+      top: 15px;
       left: -20%; }
     .exOne .swiper-container .silderController .btnGroup .smallBt {
       position: absolute;
-      top: -10px; }
+      top: 23px; }
     .exOne .swiper-container .silderController .btnGroup .smallBt::after {
       display: none; }
-  .exOne .swiper-container .two {
-    margin-top: 86px; }
-    .exOne .swiper-container .two .bg2 {
-      z-index: -6;
-      position: absolute;
-      right: 0;
-      top: -86px;
-      display: inline-block; }
-    .exOne .swiper-container .two .wave {
-      width: 100%; }
-    .exOne .swiper-container .two p {
-      color: #fff;
-      position: absolute;
-      top: 42%;
-      font-size: 12px;
-      text-align: center;
-      left: calc(50% - 84px); }
+  .exOne .swiper-container .two .bg2 {
+    z-index: -6;
+    position: absolute;
+    right: 0;
+    top: -86px;
+    display: inline-block; }
+  .exOne .swiper-container .two .wave {
+    width: 100%; }
+  .exOne .swiper-container .two::after {
+    -webkit-background-size: 50% auto !important;
+    background-size: 50% auto !important;
+    content: "";
+    display: block;
+    padding-top: 16.66666666666667%;
+    background: url("../images/exhibition/bg3.svg") no-repeat left center; }
+  .exOne .swiper-container .two p {
+    color: #fff;
+    position: absolute;
+    top: 42%;
+    font-size: 3.3333333333vw;
+    text-align: center;
+    padding: 0 26.6%; }
   .exOne .swiper-container .blur {
     width: 100%;
     padding-bottom: 45px; }
