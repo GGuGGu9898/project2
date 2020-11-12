@@ -1,0 +1,195 @@
+.top_visual {
+  height: 40vh;
+  min-height: 300px; }
+  .top_visual .swiper-container {
+    height: 100%; }
+    .top_visual .swiper-container .swiper-slide {
+      -webkit-background-size: cover !important;
+      background-size: cover !important;
+      background-image: no-repeat center;
+      height: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
+      .top_visual .swiper-container .swiper-slide.exPic1 {
+        background-image: url("../images/exhibition/1.png"); }
+      .top_visual .swiper-container .swiper-slide.exPic2 {
+        background-image: url("../images/exhibition/2.png"); }
+      .top_visual .swiper-container .swiper-slide.exPic3 {
+        background-image: url("../images/exhibition/3.png"); }
+      .top_visual .swiper-container .swiper-slide.exPic4 {
+        background-image: url("../images/exhibition/4.png"); }
+    .top_visual .swiper-container .controller {
+      -webkit-border-radius: 0 27px 0 0;
+      border-radius: 0 27px 0 0;
+      position: absolute;
+      bottom: 18px;
+      left: calc(50% - 37px);
+      height: 19px;
+      width: 74px;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 90; }
+      .top_visual .swiper-container .controller .swiper-pagination {
+        left: 25px;
+        top: 0; }
+      .top_visual .swiper-container .controller .swiper-pagination-bullet {
+        width: 3px;
+        height: 3px;
+        background: #fff;
+        opacity: 0.5;
+        margin: 8px 3px; }
+      .top_visual .swiper-container .controller .swiper-pagination-bullet.active {
+        opacity: 1; }
+      .top_visual .swiper-container .controller .autostop {
+        background-image: url("../images/index/icon/stop.png"); }
+      .top_visual .swiper-container .controller .autoplay {
+        background-image: url("../images/index/icon/play.png");
+        display: none; }
+      .top_visual .swiper-container .controller .play_stop {
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: 3px;
+        left: 9px; }
+      .top_visual .swiper-container .controller .play_stop.active {
+        display: none; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .main_visual .swiper-wrapper .exPic1 {
+    background-image: url("../images/exhibition/1@2x.png"); }
+
+  .main_visual .swiper-wrapper .exPic2 {
+    background-image: url("../images/exhibition/2@2x.png"); }
+
+  .main_visual .swiper-wrapper .exPic3 {
+    background-image: url("../images/exhibition/3@2x.png"); }
+
+  .main_visual .swiper-wrapper .exPic4 {
+    background-image: url("../images/exhibition/4@2x.png"); } }
+@media screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
+  .main_visual .swiper-wrapper .exPic1 {
+    background-image: url("../images/exhibition/1@3x.png"); }
+
+  .main_visual .swiper-wrapper .exPic2 {
+    background-image: url("../images/exhibition/2@3x.png"); }
+
+  .main_visual .swiper-wrapper .exPic3 {
+    background-image: url("../images/exhibition/3@3x.png"); }
+
+  .main_visual .swiper-wrapper .exPic4 {
+    background-image: url("../images/exhibition/4@3x.png"); } }
+.exOne .smTit {
+  display: block;
+  padding-top: 26px;
+  font-size: 9px; }
+.exOne .bar {
+  position: absolute;
+  left: 50%;
+  margin: 13px 0 5px 0;
+  width: 1px;
+  height: 51px; }
+.exOne h3 {
+  padding-top: 76px;
+  line-height: 27px;
+  font-size: 22px;
+  letter-spacing: 4px;
+  margin-bottom: 30px; }
+.exOne .intro {
+  width: 100%; }
+.exOne .introP {
+  font-size: 11px;
+  line-height: 16px;
+  width: 100%;
+  display: inline-block;
+  position: relative; }
+  .exOne .introP p:nth-child(1) {
+    position: absolute;
+    top: 22px;
+    left: 10%;
+    width: 50%; }
+  .exOne .introP p:nth-child(2) {
+    position: absolute;
+    top: 22px;
+    right: 10%;
+    width: 30%; }
+  .exOne .introP p:nth-child(2)::after {
+    content: "";
+    background: url("../images/exhibition/square.png");
+    position: absolute;
+    bottom: -28px;
+    right: 0;
+    width: 28px;
+    height: 10px; }
+.exOne .bg1 {
+  padding-top: -20px; }
+.exOne .swiper-container {
+  width: 100%;
+  height: 100%; }
+  .exOne .swiper-container .swiper-slide img {
+    width: 100%;
+    margin-bottom: 16px; }
+  .exOne .swiper-container .swiper-slide strong {
+    color: #fff;
+    font-size: 11px;
+    line-height: 18px;
+    background: url("../images/exhibition/squareBk.png") no-repeat center;
+    width: 108px;
+    height: 18px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 400;
+    margin-left: 55%; }
+  .exOne .swiper-container .silderController {
+    position: relative; }
+    .exOne .swiper-container .silderController .swiper-pagination {
+      font-size: 10px;
+      position: absolute;
+      top: -18px;
+      left: -20%; }
+    .exOne .swiper-container .silderController .btnGroup .smallBt {
+      position: absolute;
+      top: -10px; }
+    .exOne .swiper-container .silderController .btnGroup .smallBt::after {
+      display: none; }
+  .exOne .swiper-container .two {
+    margin-top: 86px; }
+    .exOne .swiper-container .two .bg2 {
+      z-index: -6;
+      position: absolute;
+      right: 0;
+      top: -86px;
+      display: inline-block; }
+    .exOne .swiper-container .two .wave {
+      width: 100%; }
+    .exOne .swiper-container .two p {
+      color: #fff;
+      position: absolute;
+      top: 42%;
+      font-size: 12px;
+      text-align: center;
+      left: calc(50% - 84px); }
+  .exOne .swiper-container .blur {
+    width: 100%;
+    padding-bottom: 45px; }
+.exOne .last {
+  font-size: 3.055555555555556vw; }
+  .exOne .last .introWrap {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    bottom: 10.63829787234043%;
+    padding: 0 5vw;
+    width: 100%; }
+    .exOne .last .introWrap .fish {
+      width: 40%; }
+    .exOne .last .introWrap a, .exOne .last .introWrap p {
+      position: absolute;
+      left: 50%; }
+    .exOne .last .introWrap a {
+      top: 0; }
+    .exOne .last .introWrap p {
+      bottom: 0;
+      padding-right: 5vw; }
+
+/*# sourceMappingURL=sub.css.map */

@@ -26,64 +26,65 @@
                     asset/images/common/logo3x.png 3x">
                 </a>
             </h1>
-            <button class="btn_menu">
+            <button class="btn_menu" onclick="ShowMenu()">
                 <span class="blind-b">메뉴열기</span>
                 <span class="line top"></span>
                 <span class="line mid"></span>
                 <span class="line btm"></span>
             </button>
 
-            <div id="navigation" class="f_r">
-                <div class="topNav">
-                    <button class="btn_close">
-                        <span class="blind-b">메뉴닫기</span>
-                        <span class="lineS left"></span>
-                        <span class="lineS right"></span>
-                    </button>
-                    <ul class="membership">
-                        <li>
-                            <a href="">LOG IN</a>
-                        </li>
-                        <li>
-                            <a href="">SIGN UP</a>
-                        </li>
-                    </ul>
-                        <img width="88" class="blueC" src="asset/images/common/circle.svg" alt="">
-                        <img width="140" src="asset/images/common/red.svg" alt="">
-                        <img width="158" src="asset/images/common/yellow.svg" alt="">
-                    <ul class="">
-                        <li>
-                            <a href="" target="_blank" title="단 페이스북 계정 바로가기">
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" target="_blank" title="단 인스타그램 계정 바로가기">
-                                <i class="fab fa-instagram-square"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" target="_blank" title="단 트위터 계정 바로가기">
-                                <i class="fab fa-twitter-square"></i>
-                            </a>
-                        </li>
-                    </ul>
+            <div class="opacity">
+                <div id="navigation" class="f_r">
+                    <div class="topNav">
+                        <button class="btn_close" onclick="HideMenu()">
+                            <span class="blind-b">메뉴닫기</span>
+                            <img src="asset/images/common/close.png" alt="메뉴닫기">
+                        </button>
+                        <ul class="membership">
+                            <li>
+                                <a href="">LOG IN</a>
+                            </li>
+                            <li>
+                                <a href="">SIGN UP</a>
+                            </li>
+                        </ul>
+                            <img class="red" width="140" src="asset/images/common/red.svg" alt="빨간 나선형 도형">
+                            <img class="yellow" width="158" src="asset/images/common/yellow.svg" alt="노란 나선형 도형">
+                            <img class="blue" width="100" class="blueC" src="asset/images/common/circle.svg" alt="파란 원">
+                        <ul class="snsList ">
+                            <li class="clearfix::after">
+                                <a href="#" target="_blank" title="단 페이스북 계정 바로가기">
+                                    <i class="fab fa-facebook-square" style="font-size: 26px;"></i>
+                                </a>
+                            </li>
+                            <li class="clearfix::after">
+                                <a href="#" target="_blank" title="단 인스타그램 계정 바로가기">
+                                    <i class="fab fa-instagram-square" style="font-size: 26px;"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="단 트위터 계정 바로가기">
+                                    <i class="fab fa-twitter-square" style="font-size: 26px;"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <nav id="gnb">
+                        <ul>
+                            <li class="gnb1"><a href="#">ABOUT</a></li>
+                            <li class="gnb2"><a href="#">ARTIST</a></li>
+                            <li class="gnb3"><a href="#">ARTICLE</a></li>
+                            <li class="gnb4"><a href="exhibition/exhibition.html">EXHIBITION</a></li>
+                            <li class="gnb5"><a href="#">SHOP</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav id="gnb">
-                    <ul>
-                        <li class="gnb1"><a href="">ABOUT</a></li>
-                        <li class="gnb2"><a href="">ARTIST</a></li>
-                        <li class="gnb3"><a href="">ARTICLE</a></li>
-                        <li class="gnb4"><a href="">EXHIBITION</a></li>
-                        <li class="gnb5"><a href="">SHOP</a></li>
-                    </ul>
-                </nav>
             </div>
         </header>
         <section id="content" role="main">
             <h2 class="blind-b">단</h2>
             <article class="main_visual">
-                <div class="swiper-container p_r">
+                <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide pic1"></div>
                         <div class="swiper-slide pic2"><p class="blind-b"></p></div>
@@ -110,21 +111,23 @@
                         <!-- 슬라이더 상세 내용 -->
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="asset/images/index/POSTER1.png" alt="전시회 1" srcset="asset/images/index/POSTER12x.png 2x, asset/images/index/POSTER13x.png 3x">
+                                <a href="#"><img src="asset/images/index/POSTER1.png" alt="전시회 1" srcset="asset/images/index/POSTER12x.png 2x, asset/images/index/POSTER13x.png 3x"></a>
                                 <strong>ORIENTAL ART</strong>
                             </div>
                             <div class="swiper-slide">
-                                <img src="asset/images/index/POSTER2.png" alt="전시회 2" srcset="asset/images/index/POSTER22x.png 2x, asset/images/index/POSTER23x.png 3x">
+                                <a href="exhibition/exhibition.html"><img src="asset/images/index/POSTER2.png" alt="전시회 2" srcset="asset/images/index/POSTER22x.png 2x, asset/images/index/POSTER23x.png 3x"></a>
                                 <strong>PHOTOGRAPH</strong>
                             </div>
                         </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-
-                        <!-- If we need navigation buttons -->
-                        <div class="btnGroup">
-                            <div class="swiper-button-prev smallBt"></div>
-                            <div class="swiper-button-next smallBt"></div>
+                        <div class="silderController">
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+    
+                            <!-- If we need navigation buttons -->
+                            <div class="btnGroup">
+                                <div class="swiper-button-prev smallBt"><img src="asset/images/index/icon/prev.png" alt="이전 슬라이더"></div>
+                                <div class="swiper-button-next smallBt"><img src="asset/images/index/icon/next.png" alt="다음 슬라이더"></div>
+                            </div>
                         </div>
             </article>
             <article class="artists">
@@ -143,7 +146,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <img src="asset/images/index/sculpt.png" alt="조각" srcset="asset/images/index/sculpt2x.png 2x, asset/images/index/sculpt3x.png 3x">
-                                <strong>ORIENTAL ART</strong>
+                                <strong>SCULPTOR</strong>
                             </div>
                                     <div class="swiper-slide">
                                         <img src="asset/images/index/wheel.png" alt="현대미술" srcset="asset/images/index/wheel2x.png 2x, asset/images/index/wheel3x.png 3x">
@@ -166,12 +169,16 @@
                                 <strong>LITERATURE</strong>
                             </div>
                         </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                        <div class="silderController">
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+    
+                            <!-- If we need navigation buttons -->
+                            <div class="btnGroup">
+                                <div class="swiper-button-prev smallBt"><img src="asset/images/index/icon/prev.png" alt="이전 슬라이더"></div>
+                                <div class="swiper-button-next smallBt"><img src="asset/images/index/icon/next.png" alt="다음 슬라이더"></div>
+                            </div>
+                        </div>
             </article>
         </section>
                 <footer id="footer">

@@ -1,0 +1,107 @@
+
+@charset "utf-8";
+@import "_mixin", "_var"; 
+
+.top_visual{
+    height: 40vh;min-height: 300px;
+    .swiper-container { 
+        height: 100%; 
+        .swiper-slide{
+            @include bgsize(cover); 
+            background-image: no-repeat center;height: 100%;display: block;margin-left: auto;margin-right: auto;
+            &.exPic1{background-image: url("../images/exhibition/1.png");}
+            &.exPic2{background-image: url("../images/exhibition/2.png");}
+            &.exPic3{background-image: url("../images/exhibition/3.png");}
+            &.exPic4{background-image: url("../images/exhibition/4.png");}  
+        }
+        .controller{
+            @include radius(0 27px 0 0);
+            position: absolute;bottom:18px;left: calc(50% - 37px);height: 19px;width: 74px;background-color:rgba(0, 0, 0, .5);z-index: 90;
+
+            .swiper-pagination{left: 25px;top: 0;}
+            .swiper-pagination-bullet {
+                width: 3px;
+                height: 3px;
+                background: #fff;
+                opacity: 0.5;
+                margin: 8px 3px;
+            }
+            .swiper-pagination-bullet.active{opacity: 1;}
+
+            .autostop{background-image: url("../images/index/icon/stop.png");}
+            .autoplay{background-image: url("../images/index/icon/play.png");display: none;}
+            .play_stop{width: 12px;height: 12px;position: absolute;top: 3px;left: 9px;}
+            .play_stop.active{display: none;}
+        }
+    }
+}
+@media
+screen and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+    .main_visual .swiper-wrapper .exPic1 {background-image: url("../images/exhibition/1@2x.png");}
+    .main_visual .swiper-wrapper .exPic2 {background-image: url("../images/exhibition/2@2x.png");}
+    .main_visual .swiper-wrapper .exPic3 {background-image: url("../images/exhibition/3@2x.png");}
+    .main_visual .swiper-wrapper .exPic4 {background-image: url("../images/exhibition/4@2x.png");}
+  
+}
+@media
+screen and (-webkit-min-device-pixel-ratio: 3),
+screen and (min-resolution: 288dpi),
+screen and (min-resolution: 3dppx) {
+    .main_visual .swiper-wrapper .exPic1 {background-image: url("../images/exhibition/1@3x.png");}
+    .main_visual .swiper-wrapper .exPic2 {background-image: url("../images/exhibition/2@3x.png");}
+    .main_visual .swiper-wrapper .exPic3 {background-image: url("../images/exhibition/3@3x.png");}
+    .main_visual .swiper-wrapper .exPic4 {background-image: url("../images/exhibition/4@3x.png");}
+
+}
+
+.exOne{
+    .smTit{
+        display: block;padding-top: 26px;font-size: 9px;}
+    .bar{position: absolute;left: 50%;margin: 13px 0 5px 0; width: 1px;height: 51px;}
+    h3{padding-top: 76px;line-height: 27px;font-size: 22px;letter-spacing: 4px;margin-bottom: 30px;}
+    .intro{width: 100%;}
+    .introP{font-size: 11px;line-height: 16px;width: 100%;display: inline-block;position: relative;
+        p:nth-child(1){position: absolute;top:22px;left: 10%;width: 50%;}
+        p:nth-child(2){position: absolute;top:22px;right: 10%;width: 30%;}
+        p:nth-child(2)::after{content: "";background: url("../images/exhibition/square.png");position: absolute;bottom: -28px;right: 0;width: 28px;height: 10px;}
+
+    }
+    .bg1{padding-top: -20px;}
+
+    .swiper-container{
+        width: 100%;height: 100%;
+        .swiper-slide{
+            img{width: 100%;margin-bottom: 16px;}
+            strong{color: #fff;font-size: 11px;line-height: 18px;background: url("../images/exhibition/squareBk.png") no-repeat center;width: 108px;height: 18px;display: inline-block;text-align: center;font-weight: 400;margin-left: 55%;}
+        }
+        .silderController{
+            position: relative;
+            .swiper-pagination{font-size: 10px;position: absolute;top:-18px;left: -20%;}
+            .btnGroup{
+                .smallBt{position: absolute;top: -10px;}
+                .smallBt::after{display:none;}
+            }
+            
+        }
+        .two{margin-top: 86px;
+         .bg2{
+            z-index: -6;position: absolute;right: 0;top: -86px;display: inline-block;} 
+        .wave{width: 100%;}
+        p{color: #fff;position: absolute;top: 42%;font-size: 12px;text-align: center;left: calc(50% - 84px);}
+    }
+    .blur{width: 100%;padding-bottom: 45px;}
+    }
+    .last{font-size: 3.055555555555556vw;
+        .introWrap{
+            @include box;
+            position: absolute;left: 0;bottom: 10.63829787234043%;padding:0 5vw;width: 100%;
+            .fish{width: 40%;}
+            a, p{position: absolute;left: 50%;}
+            a{top: 0;}
+            p{bottom: 0;padding-right: 5vw;}
+            
+        }
+    }
+}

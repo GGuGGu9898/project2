@@ -10,13 +10,15 @@
     -webkit-background-size: $value !important;
     background-size: $value !important;
 }
+
 @mixin transition($value...) {
     -webkit-transition: $value;
     -moz-transition: $value;
     -o-transition: $value;
-    transition: $value;}
+    transition: $value;
+}
 
-@mixin translate($value...) {
-    -webkit-translate:$value;
-    translate:$value;
+@mixin box {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
