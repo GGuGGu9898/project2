@@ -173,8 +173,7 @@ body {
     .opacity #navigation > .topNav {
       position: relative;
       top: 0;
-      height: 60vh;
-      border-bottom: 3px solid #000; }
+      height: 60vh; }
       .opacity #navigation > .topNav .red {
         position: absolute;
         top: -150px;
@@ -234,28 +233,57 @@ body {
         float: left;
         margin: 1.388888888888889vw; }
         .opacity #navigation .membership li a {
-          font-size: 1.3888888vw; }
-    .opacity #navigation .snsList {
-      float: right;
-      position: absolute;
-      bottom: 1.388888vw;
-      right: 15px; }
-      .opacity #navigation .snsList li {
-        float: left; }
-      .opacity #navigation .snsList li + li {
-        margin-left: 1.388888vw; }
-  .opacity nav {
-    position: relative;
+          font-size: 2.388889vw; }
+  .opacity nav .snsList {
+    float: right;
+    position: absolute;
+    bottom: 11.611112vw;
+    right: -43.833334vw; }
+    .opacity nav .snsList li {
+      float: left; }
+    .opacity nav .snsList li + li {
+      margin-left: 1.1vw; }
+  .opacity nav ul {
+    padding: 5.333333333333333vw;
+    position: absolute;
+    height: 60vmin;
+    width: 60vmin;
     bottom: 0;
-    height: 40vh; }
-    .opacity nav ul {
-      padding: 5.333333333333333vw; }
-      .opacity nav ul li {
-        line-height: 8vw;
-        font-size: 8vw;
-        margin-bottom: 4.8vw;
-        text-align: right;
-        font-weight: 600; }
+    right: 0; }
+    .opacity nav ul li {
+      line-height: 8vw;
+      font-size: 8vw;
+      margin-bottom: 4.8vw;
+      text-align: right;
+      font-weight: 600; }
+
+.fade {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  opacity: 0; }
+  .fade.up {
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px); }
+  .fade.down {
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px); }
+  .fade.left {
+    -webkit-transform: translateX(40px);
+    transform: translateX(40px); }
+  .fade.right {
+    -webkit-transform: translateX(-40px);
+    transform: translateX(-40px); }
+
+.fade.on {
+  opacity: 1; }
+  .fade.on.up, .fade.on.down {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
+  .fade.on.left, .fade.on.right {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
 
 #footer {
   height: 29.44444444444444vw;

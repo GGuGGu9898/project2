@@ -33,7 +33,11 @@ $(document).ready(function () {
           centeredSildes: 'true',
           watchOverflow :'boolean'
           
-        }
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
         
       })
     var mySwiper3 = new Swiper('.artists .swiper-container', {
@@ -41,7 +45,28 @@ $(document).ready(function () {
           el: '.swiper-pagination',
           type: 'fraction',
           //bullet 타입일 경우 버튼 클릭시 이동 가능함
-        }
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
         
       })
+
+      $(document).ready(function () {
+        var scrollT;
+        var timer = 0;
+      
+        $(window).on('scroll', function () {
+          clearTimeout(timer);
+        
+          timer = setTimeout(function () {
+            scrollT = $(this).scrollTop();
+        
+            $('.fade').each(function () {
+            if (scrollT > $(this).offset().top - 500) $(this).addClass('on');
+            });
+          }, 50);
+          });
+      });
 });

@@ -134,7 +134,7 @@ body{font-family: NtSansKR, Bah; color: #000; font-weight: 500;word-break: keep-
     position: relative;width: 85%;height: 100vh;
     ;background: #fff;
     >.topNav{
-        position: relative;top: 0;height: 60vh;border-bottom :3px solid #000;
+        position: relative;top: 0;height: 60vh;
     
     
         .red{position: absolute;top: -150px;left: 0;width:140px; animation: redShape; animation-duration: 2s; animation-duration: leaner;animation-iteration-count:infinite; animation-direction:alternate;}
@@ -175,21 +175,19 @@ body{font-family: NtSansKR, Bah; color: #000; font-weight: 500;word-break: keep-
         .membership{
             float: right; margin:5.555555555555556vw 4.722222222222222vw;
             li{float: left;margin:1.388888888888889vw;
-                a{font-size: 1.3888888vw;}
+                a{font-size: 2.388889vw;}
             }
         }
-        .snsList{
-            float: right;position: absolute;bottom: 1.388888vw;right: 15px;
-            li{
-                float: left;
-            }
-            li+li{margin-left: 1.388888vw;}
-            }
         
     }
     nav{
-        position: relative;bottom: 0;height: 40vh;
-        ul{padding: 5.333333333333333vw;
+        .snsList{
+            float: right;position: absolute; bottom: 11.611112vw;    right: -43.833334vw;
+            li{float: left;
+            }
+            li+li{margin-left:1.1vw;}
+        }
+        ul{padding: 5.333333333333333vw;position: absolute;height: 60vmin;width: 60vmin;bottom: 0;right: 0;
             li{line-height: 8vw;font-size: 8vw;margin-bottom: 4.8vw;text-align: right;font-weight: 600;
             }
             
@@ -198,5 +196,22 @@ body{font-family: NtSansKR, Bah; color: #000; font-weight: 500;word-break: keep-
         }
 
     }   
+
+.fade{
+    @include transition(all 1s);
+    opacity: 0;
+    // 수직은 translateY => 기준 아래는 +, 기준 위는 -
+    &.up{@include transform(translateY(40px));}
+    &.down{@include transform(translateY(-40px));}
+    // 수평은 translateX => 기준 오른쪽 +, 기준 왼쪽 -
+    &.left{@include transform(translateX(40px));}
+    &.right{@include transform(translateX(-40px));}
+}
+    .fade.on{
+    opacity: 1;
+    &.up, &.down{@include transform(translateY(0px));}
+    &.left, &.right{@include transform(translateX(0px));}
+}
+
  #footer{
         height: 29.44444444444444vw; background-color: #000;color: #fff;font-size: $font9; text-align: center;line-height: 29.44444444444444vw;}

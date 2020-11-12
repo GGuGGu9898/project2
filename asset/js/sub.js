@@ -33,7 +33,27 @@ $(document).ready(function () {
             el: '.swiper-pagination',
             type: 'fraction',
             //bullet 타입일 경우 버튼 클릭시 이동 가능함
-          }
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
           
         })
+
+          var scrollT;
+          var timer = 0;
+        
+          $(window).on('scroll', function () {
+            clearTimeout(timer);
+          
+            timer = setTimeout(function () {
+              scrollT = $(this).scrollTop();
+          
+              $('.fade').each(function () {
+              if (scrollT > $(this).offset().top - 550) $(this).addClass('on');
+              });
+            }, 50);
+            });
+        
 });

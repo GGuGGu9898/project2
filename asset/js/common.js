@@ -12,7 +12,3 @@ var giMenuDuration = 700;
 		function HideMenu(){
 			$('.opacity' ).animate( { right: '-100%' }, { duration: giMenuDuration, complete:function(){ $('.opacity' ).css( { 'display' : 'none' } ); } } );
 		}
-$(document).ready(function () {
-
-
-});
