@@ -1,6 +1,19 @@
 @charset "utf-8";
 @import "_mixin", "_var"; 
-
+/* #intro{
+    @include transition(1s 1s);
+    position: absolute;top: 0;left: 0;width: 100vw;height: 100vh;display: flex;justify-content: center;align-items: center;
+    body.on &{
+        @include transform(scale(2));
+        opacity: 0;}
+    img{width: 55px;}
+}
+#wrap{
+    @include transition(1s 1s);
+    opacity: 0;
+    body.on &{opacity: 1;}
+    }
+ */
 .main_visual{
     height: 100vh;min-height: 600px;
     .swiper-container { 

@@ -2,6 +2,8 @@
 @charset "utf-8";
 @import "_mixin", "_var"; 
 
+
+
 .top_visual{
     height: 40vh;min-height: 300px;
     .swiper-container { 
@@ -59,7 +61,8 @@ screen and (min-resolution: 3dppx) {
 .exOne{
     .smTit{
         display: block;padding-top: 7.22222vw;font-size: $font9;}
-    .bar{position: absolute;left: 50%;margin: 3.611111vw 0 1.38888vw 0; width: 1px;height: 14.16666666666667vw;background: #000;}
+    .bar{position: absolute;left: 50%;margin: 3.611111vw 0 1.38888vw 0; width: 1px;height: 14.16666666666667vw;background: #000;
+    }
     h3{padding-top: 21.11111vw;line-height: 7.5vw;font-size: 6.1vw;letter-spacing: 1.11111vw;margin-bottom: 12vw;}
     .intro{width: 100%;}
     .introP{
@@ -103,8 +106,9 @@ screen and (min-resolution: 3dppx) {
     }
     .blur{width: 100%;padding-bottom: 45px;}
     }
-    .last{font-size: 3.055555555555556vw;
+    .last{font-size: 3.055555555555556vw;position: relative;
         .introWrap{
+            &::before{content: "";position: absolute;background: url("../images/exhibition/square2.png");width: 10px;height: 28px;top: 0;right: 6%;animation: upDown; animation-duration: 3s; animation-duration: leaner;animation-iteration-count:infinite; animation-direction:alternate;}
             @include box;
             position: absolute;left: 0;bottom: 10.63829787234043%;padding:0 5vw;width: 100%;
             .fish{width: 40%;}
@@ -113,5 +117,17 @@ screen and (min-resolution: 3dppx) {
             p{bottom: 0;padding-right: 5vw;}
             
         }
+
+        @keyframes upDown {
+            0% {
+              top:-30.66666vw;
+            }
+            100% {
+              top:16.66666vw;
+            }
+        }
     }
+    
 }
+
+

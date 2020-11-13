@@ -20,8 +20,7 @@
         <header id="header">
             <h1 class="logo">
                 <a href="../index.html" aria-label="단">
-                    <img class="center" src="../asset/images/common/logo.png" alt="단" srcset="../asset/images/common/logo2x.png 2x,
-                    ../asset/images/common/logo3x.png 3x">
+                    <img class="center" src="../asset/images/common/logo.svg" alt="단">
                 </a>
             </h1>
             <button class="btn_menu" onclick="ShowMenu()">
@@ -34,17 +33,17 @@
             <div class="opacity">
                 <div id="navigation" class="f_r">
                     <div class="topNav clearfix::after">
-                        <button class="btn_close" onclick="HideMenu()">
+                        <button class="btn_close" onclick="HideMenu()" data-link="first">
                             <span class="blind-b">메뉴닫기</span>
                             <img src="../asset/images/common/close.png" alt="메뉴닫기" srcset="../asset/images/common/close@2x.png 2x,
                             ../asset/images/common/close@3x.png 3x">
                         </button>
                         <ul class="membership">
                             <li>
-                                <a href="">LOG IN</a>
+                                <a href="#">LOG IN</a>
                             </li>
                             <li>
-                                <a href="">SIGN UP</a>
+                                <a href="#">SIGN UP</a>
                             </li>
                         </ul>
                             <img class="red" width="140" src="../asset/images/common/red.svg" alt="빨간 나선형 도형">
@@ -74,7 +73,7 @@
                             <li class="gnb2"><a href="#">ARTIST</a></li>
                             <li class="gnb3"><a href="#">ARTICLE</a></li>
                             <li class="gnb4"><a href="exhibition/exhibition.html">EXHIBITION</a></li>
-                            <li class="gnb5"><a href="#">SHOP</a></li>
+                            <li class="gnb5" ><a href="#" data-link="last">SHOP</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -105,16 +104,15 @@
             </article>
             <article class="exOne">
                 <strong class="center smTit fade up">PHOTOGRAPY</strong>
-                <div class="center bar fade down"></div>
+                <div class="center bar fade down line_effect"></div>
                 <h3 class="center fade down">최성용</h3>
                 <img class="intro fade up" src="../asset/images/exhibition/intro.png" alt="반대편을 응시하는 소녀의 뒷 모습">
                 <div class="introP clearfix fade up">
-                    <p class="fade up">해 지고 나서야 구름 모양을<br>
-                        떠올릴 수 없고 달 없는 밤의<br>나무는 검은색을 띄는 사실<br>이 너무나 아쉽고 힘들게 다<br>가올 때가 있다.
+                    <p class="fade up">해 지고 나서야 구름 모양을 떠올릴 수 없고 달 없는 밤의 나무는 검은색을 띄는 사실이 너무나 아쉽고 힘들게 다가올 때가 있다.
                         <br>
                         <br>
-                        넘쳐나는 관점 중 어디에 손<br>을 들어야할지 모르겠고 들<br>어진 손이 제 것인지 헷갈리<br>는 날이 분명히 있다. </p>
-                    <p class="fade up">몇몇 비슷한 나에게 숨을<br> 돌릴만한 시간과 장소를<br> 내어줄 수 있다면 거창한<br>이유는 필요 없다.<br>
+                        넘쳐나는 관점 중 어디에 손을 들어야할지 모르겠고 들어진 손이 제 것인지 헷갈리는 날이 분명히 있다. </p>
+                    <p class="fade up">몇몇 비슷한 나에게 숨을 돌릴만한 시간과 장소를 내어줄 수 있다면 거창한 이유는 필요 없다.<br>
                     <br>   
                     <br>  
                     더욱이 맑은 시선을 전달해주고 싶다. </p>
@@ -125,44 +123,44 @@
                     <!-- 슬라이더 상세 내용 -->
                     <div class="swiper-wrapper">
                         <div class="swiper-slide clearfix::after">
-                            <a href="#"><img src="../asset/images/exhibition/exPic1.png" alt="" srcset="../asset/images/exhibition/exPic1@2x.png 2x, ../asset/images/exhibition/exPic1@3x.png 3x"></a>
+                            <a href="#"><img src="../asset/images/exhibition/exPic1.png" alt="어두운 분위기 속의 여자" srcset="../asset/images/exhibition/exPic1@2x.png 2x, ../asset/images/exhibition/exPic1@3x.png 3x"></a>
                             <strong>untitle</strong>
                         </div>
                        
                         <div class="swiper-slide">
-                            <a href="#"><img src="../asset/images/exhibition/exPic2.png" alt="" srcset="../asset/images/exhibition/exPic2@2x.png 2x, ../asset/images/exhibition/exPic2@3x.png 3x"></a>
+                            <a href="#"><img src="../asset/images/exhibition/exPic2.png" alt="망원 한강공원" srcset="../asset/images/exhibition/exPic2@2x.png 2x, ../asset/images/exhibition/exPic2@3x.png 3x"></a>
                             <strong>망원 한강공원</strong>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#"><img src="../asset/images/exhibition/exPic3.png" alt="" srcset="../asset/images/exhibition/exPic3@2x.png 2x, ../asset/images/exhibition/exPic3@3x.png 3x"></a>
+                            <a href="#"><img src="../asset/images/exhibition/exPic3.png" alt="송전탑" srcset="../asset/images/exhibition/exPic3@2x.png 2x, ../asset/images/exhibition/exPic3@3x.png 3x"></a>
                             <strong>untitle</strong>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#"><img src="../asset/images/exhibition/exPic4.png" alt="" srcset="../asset/images/exhibition/exPic4@2x.png 2x, ../asset/images/exhibition/exPic4@3x.png 3x"></a>
+                            <a href="#"><img src="../asset/images/exhibition/exPic4.png" alt="여름에 잔디밭에 누워있는 남자" srcset="../asset/images/exhibition/exPic4@2x.png 2x, ../asset/images/exhibition/exPic4@3x.png 3x"></a>
                             <strong>untitle</strong>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#"><img src="../asset/images/exhibition/exPic5.png" alt="" srcset="../asset/images/exhibition/exPic5@2x.png 2x, ../asset/images/exhibition/exPic5@3x.png 3x"></a>
+                            <a href="#" class="goModal" ><img src="../asset/images/exhibition/exPic5.png" alt="넓게보이는 바다" srcset="../asset/images/exhibition/exPic5@2x.png 2x, ../asset/images/exhibition/exPic5@3x.png 3x"></a>
                             <strong>untitle</strong>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#"><img src="../asset/images/exhibition/exPic6.png" alt="" srcset="../asset/images/exhibition/exPic6@2x.png 2x, ../asset/images/exhibition/exPic6@3x.png 3x"></a>
+                            <a href="#"><img src="../asset/images/exhibition/exPic6.png" alt=" 빛이 들어오는 창을 등지고 앉아있는 남자" srcset="../asset/images/exhibition/exPic6@2x.png 2x, ../asset/images/exhibition/exPic6@3x.png 3x"></a>
                             <strong>untitle</strong>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#"><img src="../asset/images/exhibition/exPic7.png" alt="" srcset="../asset/images/exhibition/exPic7@2x.png 2x, ../asset/images/exhibition/exPic7@3x.png 3x"></a>
+                            <a href="#"><img src="../asset/images/exhibition/exPic7.png" alt="일몰" srcset="../asset/images/exhibition/exPic7@2x.png 2x, ../asset/images/exhibition/exPic7@3x.png 3x"></a>
                             <strong>일몰</strong>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#"><img src="../asset/images/exhibition/exPic8.png" alt="" srcset="../asset/images/exhibition/exPic8@2x.png 2x, ../asset/images/exhibition/exPic8@3x.png 3x"></a>
+                            <a href="#"><img src="../asset/images/exhibition/exPic8.png" alt="우연히 찍힌 여자의 뒷모습" srcset="../asset/images/exhibition/exPic8@2x.png 2x, ../asset/images/exhibition/exPic8@3x.png 3x"></a>
                             <strong>우연</strong>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#"><img src="../asset/images/exhibition/exPic9.png" alt="" srcset="../asset/images/exhibition/exPic9@2x.png 2x, ../asset/images/exhibition/exPic9@3x.png 3x"></a>
+                            <a href="#"><img src="../asset/images/exhibition/exPic9.png" alt="큰 바위에 부서지는 거친 파도" srcset="../asset/images/exhibition/exPic9@2x.png 2x, ../asset/images/exhibition/exPic9@3x.png 3x"></a>
                             <strong>untitle</strong>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#"><img src="../asset/images/exhibition/exPic10.png" alt="" srcset="../asset/images/exhibition/exPic10@2x.png 2x, ../asset/images/exhibition/exPic10@3x.png 3x"></a>
+                            <a href="#"><img src="../asset/images/exhibition/exPic10.png" alt="넓게 펴져있는 구름" srcset="../asset/images/exhibition/exPic10@2x.png 2x, ../asset/images/exhibition/exPic10@3x.png 3x"></a>
                             <strong>untitle</strong>
                         </div>
                     </div>
@@ -178,6 +176,7 @@
                              
                         </div>
                     </div>
+                     
                     <div class="two p_r">
                         <img class="wave" src="../asset/images/exhibition/p.jpg" alt="무엇인가의 결">
                         <p class="fade up">깊게 생각하고 길지 않게 생각하기</p>
@@ -188,11 +187,25 @@
                         <div class="introWrap">
                         	<img class="fish" src="../asset/images/exhibition/000003.jpg" alt="망원 한강공원에서 낚시하는 사람">
                         	<a href="https://www.instagram.com/bruxiism/">@bruxiism</a>
-                        	<p>빈센트 반 고흐의 편지를 엮은 책을 구매 하셔야합니다.</p>
+                        	<p>빈센트 반 고흐의 편지를 엮은 책을 구매 하셔야 합니다.</p>
                         </div>
                     </div>
+                  
             </article>
         </section>
+        <div class="modal p_r">
+            <button class="btn_closeModal">
+                <span class="blind-b">창닫기</span>
+                <img src="../asset/images/exhibition/closeWhite.png" alt="창닫기" srcset="../asset/images/exhibition/closeWhite@2x.png 2x,
+                ../asset/images/exhibition/closeWhite@3x.png 3x">
+            </button>
+            <img class="picture" src="../asset/images/exhibition/exPic5.png" alt="" srcset="../asset/images/exhibition/exPic5@2x.png 2x, ../asset/images/exhibition/exPic5@3x.png 3x">
+            <div class="areaF clearfix::after">
+                <h4>untitle</h4>
+                <p class="year">2020</p>
+                <p class="explain">쉽게 갈 수 있는 곳</p>
+            </div>
+        </div>
         <footer id="footer">
             <p>&copy;Dan Rights Reserved</p>
         </footer>

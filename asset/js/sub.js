@@ -1,4 +1,7 @@
+
+
 $(document).ready(function () {
+
     //첫번째 슬라이드
     var mySwiper4 = new Swiper('.top_visual .swiper-container', {
         pagination: {
@@ -51,9 +54,28 @@ $(document).ready(function () {
               scrollT = $(this).scrollTop();
           
               $('.fade').each(function () {
-              if (scrollT > $(this).offset().top - 550) $(this).addClass('on');
+              if (scrollT > $(this).offset().top - 700) $(this).addClass('on');
               });
             }, 50);
             });
         
+      //modal
+      var show = $('.goModal');
+      var hide = $('.btn_closeModal')
+      var modal =$('.modal')
+      var openScrollY;
+
+      show.click(function(){
+        openScrollY = $(window).scrollTop();
+        console.log(openScrollY);
+        modal.fadeIn();
+
+        return false;
+      });
+      hide.click(function(){
+        $('html, body').stop().animate({scrollTop:openScrollY});
+        console.log(openScrollY);
+        modal.fadeOut();
+      });
 });
+

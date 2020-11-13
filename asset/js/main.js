@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $('body').addClass('on');
     //첫번째 슬라이더
     var mySwiper1 = new Swiper('.main_visual .swiper-container', {
         pagination: {

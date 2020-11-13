@@ -85,7 +85,7 @@
 }
 
 /* reset */
-body, h1, h2, h3, p, strong, ul, button, svg{margin: 0;padding: 0;}
+body, h1, h2, h3, h4, p, strong, ul, button, svg{margin: 0;padding: 0;}
 h1, h2, h3{font-size: 100%;}
 ul{list-style: none;}
 a:link, a:visited, a:hover, a:active{text-decoration: none; color: inherit;}
@@ -137,14 +137,20 @@ body{font-family: NtSansKR, Bah; color: #000; font-weight: 500;word-break: keep-
         position: relative;top: 0;height: 60vh;
     
     
-        .red{position: absolute;top: -150px;left: 0;width:140px; animation: redShape; animation-duration: 2s; animation-duration: leaner;animation-iteration-count:infinite; animation-direction:alternate;}
+        .red{
+            @include animation(redShape 2s infinite alternate);
+            position: absolute;top: -150px;left: 0;width:140px;}
 
-        .yellow{position: absolute;top: 96px;left: 280px;width:158px;animation: yellowShape; animation-duration: 2s; animation-duration: leaner;animation-iteration-count:infinite; animation-direction:alternate;}
+        .yellow{
+            @include animation(yellowShape 2s infinite alternate);
+            position: absolute;top: 96px;left: 280px;width:158px;}
 
-        .blue{position: absolute;bottom: 0;width:100px;animation: blueShape; animation-duration: 2s; animation-duration: leaner;animation-iteration-count:infinite; animation-direction:alternate;}
+        .blue{
+            @include animation(blueShape 2s infinite alternate);
+            position: absolute;bottom: 0;width:100px;}
         }
 
-        @keyframes redShape {
+        @-webkit-keyframes redShape {
             0% {
               top:-150px;
             }
@@ -152,22 +158,73 @@ body{font-family: NtSansKR, Bah; color: #000; font-weight: 500;word-break: keep-
               top:85px;
             }
         }
-            @keyframes yellowShape {
+        @-webkit-keyframes yellowShape {
                 0% {
                     left: 280px;
                 }
                 100% {
                   left:135px;
                 }
-            }
-            @keyframes blueShape {
+        }
+        @-webkit-keyframes blueShape {
                 0% {
                     left: 0px;
                 }
                 100% {
                   left:250px;
                 }
+        }
+
+        @-o-keyframes redShape {
+            0% {
+              top:-150px;
             }
+            100% {
+              top:85px;
+            }
+        }
+        @-o-keyframes yellowShape {
+                0% {
+                    left: 280px;
+                }
+                100% {
+                  left:135px;
+                }
+        }
+        @-o-keyframes blueShape {
+                0% {
+                    left: 0px;
+                }
+                100% {
+                  left:250px;
+                }
+        }
+
+        @keyframes redShape {
+                0% {
+                 top:-150px;
+             }
+                100% {
+                    top:85px;
+                }
+        }
+        @keyframes yellowShape {
+                0% {
+                    left: 280px;
+                }
+                100% {
+                  left:135px;
+                }
+        }
+        @keyframes blueShape {
+                0% {
+                    left: 0px;
+                }
+                100% {
+                  left:250px;
+                }
+        }
+        
         .btn_close{
             position: relative; top: 4.166666666666667vw;left: 4.166666666666667vw;z-index: 2000;
             img{width: 6.666666666666667vw;height: 6.666666666666667vw;}
@@ -195,7 +252,25 @@ body{font-family: NtSansKR, Bah; color: #000; font-weight: 500;word-break: keep-
             }
         }
 
-    }   
+    } 
+
+.modal{ 
+        display:none;position: fixed;top: 0;right: 0;height: 100vh;width: 100%;background:#000;z-index: 2000;color: #fff;
+    .picture{display: block;width: 100%;position: relative;}
+
+    button{
+        display: inline-block;position: absolute; width: 6.66666vw; height: 6.66666vw; margin: 3.8888888vw;z-index: 2000;
+    img{padding:3% 0 0 3% ;}
+}
+    
+   
+    .areaF{ width: 100vmin;height: 100vmin;
+   h4,p{position: absolute; right: 10%;}
+   h4{font-size: 6.388888vw;top: 108vw;}
+   .year{font-size: 1.5vw; top: 116.5vw;right: 10.5%;}
+   .explain{font-size: 3vw;bottom: 8.5vw;left: 10.5%;}
+    }
+}
 
 .fade{
     @include transition(all 1s);

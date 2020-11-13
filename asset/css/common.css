@@ -47,7 +47,7 @@
   src: url("../fonts/bahnschrift_bold.eot");
   src: url("../fonts/bahnschrift_bold.eot#iefix") format("embedded-opentype"), url("../fonts/Bahnschrift_bold.woff2") format("woff2"), url("../fonts/Bahnschrift_bold.woff") format("woff"), url("../fonts/bahnschrift_bold.ttf") format("truetype"); }
 /* reset */
-body, h1, h2, h3, p, strong, ul, button, svg {
+body, h1, h2, h3, h4, p, strong, ul, button, svg {
   margin: 0;
   padding: 0; }
 
@@ -175,34 +175,58 @@ body {
       top: 0;
       height: 60vh; }
       .opacity #navigation > .topNav .red {
+        -webkit-animation: redShape 2s infinite alternate;
+        -o-animation: redShape 2s infinite alternate;
+        animation: redShape 2s infinite alternate;
         position: absolute;
         top: -150px;
         left: 0;
-        width: 140px;
-        animation: redShape;
-        animation-duration: 2s;
-        animation-duration: leaner;
-        animation-iteration-count: infinite;
-        animation-direction: alternate; }
+        width: 140px; }
       .opacity #navigation > .topNav .yellow {
+        -webkit-animation: yellowShape 2s infinite alternate;
+        -o-animation: yellowShape 2s infinite alternate;
+        animation: yellowShape 2s infinite alternate;
         position: absolute;
         top: 96px;
         left: 280px;
-        width: 158px;
-        animation: yellowShape;
-        animation-duration: 2s;
-        animation-duration: leaner;
-        animation-iteration-count: infinite;
-        animation-direction: alternate; }
+        width: 158px; }
       .opacity #navigation > .topNav .blue {
+        -webkit-animation: blueShape 2s infinite alternate;
+        -o-animation: blueShape 2s infinite alternate;
+        animation: blueShape 2s infinite alternate;
         position: absolute;
         bottom: 0;
-        width: 100px;
-        animation: blueShape;
-        animation-duration: 2s;
-        animation-duration: leaner;
-        animation-iteration-count: infinite;
-        animation-direction: alternate; }
+        width: 100px; }
+@-webkit-keyframes redShape {
+  0% {
+    top: -150px; }
+  100% {
+    top: 85px; } }
+@-webkit-keyframes yellowShape {
+  0% {
+    left: 280px; }
+  100% {
+    left: 135px; } }
+@-webkit-keyframes blueShape {
+  0% {
+    left: 0px; }
+  100% {
+    left: 250px; } }
+@-o-keyframes redShape {
+  0% {
+    top: -150px; }
+  100% {
+    top: 85px; } }
+@-o-keyframes yellowShape {
+  0% {
+    left: 280px; }
+  100% {
+    left: 135px; } }
+@-o-keyframes blueShape {
+  0% {
+    left: 0px; }
+  100% {
+    left: 250px; } }
 @keyframes redShape {
   0% {
     top: -150px; }
@@ -256,6 +280,47 @@ body {
       margin-bottom: 4.8vw;
       text-align: right;
       font-weight: 600; }
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  background: #000;
+  z-index: 2000;
+  color: #fff; }
+  .modal .picture {
+    display: block;
+    width: 100%;
+    position: relative; }
+  .modal button {
+    display: inline-block;
+    position: absolute;
+    width: 6.66666vw;
+    height: 6.66666vw;
+    margin: 3.8888888vw;
+    z-index: 2000; }
+    .modal button img {
+      padding: 3% 0 0 3%; }
+  .modal .areaF {
+    width: 100vmin;
+    height: 100vmin; }
+    .modal .areaF h4, .modal .areaF p {
+      position: absolute;
+      right: 10%; }
+    .modal .areaF h4 {
+      font-size: 6.388888vw;
+      top: 108vw; }
+    .modal .areaF .year {
+      font-size: 1.5vw;
+      top: 116.5vw;
+      right: 10.5%; }
+    .modal .areaF .explain {
+      font-size: 3vw;
+      bottom: 8.5vw;
+      left: 10.5%; }
 
 .fade {
   -webkit-transition: all 1s;

@@ -184,7 +184,8 @@
     width: 100%;
     padding-bottom: 45px; }
 .exOne .last {
-  font-size: 3.055555555555556vw; }
+  font-size: 3.055555555555556vw;
+  position: relative; }
   .exOne .last .introWrap {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -193,6 +194,19 @@
     bottom: 10.63829787234043%;
     padding: 0 5vw;
     width: 100%; }
+    .exOne .last .introWrap::before {
+      content: "";
+      position: absolute;
+      background: url("../images/exhibition/square2.png");
+      width: 10px;
+      height: 28px;
+      top: 0;
+      right: 6%;
+      animation: upDown;
+      animation-duration: 3s;
+      animation-duration: leaner;
+      animation-iteration-count: infinite;
+      animation-direction: alternate; }
     .exOne .last .introWrap .fish {
       width: 40%; }
     .exOne .last .introWrap a, .exOne .last .introWrap p {
@@ -203,5 +217,10 @@
     .exOne .last .introWrap p {
       bottom: 0;
       padding-right: 5vw; }
+@keyframes upDown {
+  0% {
+    top: -30.66666vw; }
+  100% {
+    top: 16.66666vw; } }
 
 /*# sourceMappingURL=sub.css.map */
