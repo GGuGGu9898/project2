@@ -1,6 +1,6 @@
 @mixin radius($value) {
-    -webkit-border-radius: $value;
-    border-radius: $value;
+    -webkit-border-radius: $value !important;
+    border-radius: $value !important;
 }
 @mixin transform($value...) {
     -webkit-transform: $value;

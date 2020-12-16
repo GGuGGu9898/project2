@@ -27,22 +27,27 @@
             &.pic4{background-image: url("../images/index/4.png");}  
         }
         .controller{
-            @include radius(0 27px 0 0);
-            position: absolute;bottom:72px;left: calc(50% - 37px);height: 19px;width: 74px;background-color:rgba(0, 0, 0, .5);z-index: 90;
-
-            .swiper-pagination{left: 25px;top: 0;}
+            @include radius(0 7.5vw 0 0);
+            position: absolute;bottom:20vw;left: calc(50% - 10.277777vw);height: 5.277777vw;width: 20.55555vw;background-color:rgba(0, 0, 0, .7);z-index: 90;
+            
+            .swiper-pagination{left: 6.6666666vw;top: 0;}
             .swiper-pagination-bullet {
-                width: 3px;
-                height: 3px;
+                @include radius (10vw); 
+                width: 1.041666vw;
+                height: 1.041666vw;
                 background: #fff;
                 opacity: 0.5;
-                margin: 8px 3px;
+                margin: 2vw 0.833333vw;
             }
-            .swiper-pagination-bullet.active{opacity: 1;}
+            .swiper-pagination-bullet-active {
+                @include radius (10vw) ; 
+                opacity: 1;
+                background: #fff !important;
+              }
 
-            .autostop{background-image: url("../images/index/icon/stop.png");}
-            .autoplay{background-image: url("../images/index/icon/play.png");display: none;}
-            .play_stop{width: 12px;height: 12px;position: absolute;top: 3px;left: 9px;}
+            .autostop{background-image: url("../images/common/stopBtn.svg");}
+            .autoplay{background-image: url("../images/common/playBtn.svg");display: none;}
+            .play_stop{width: $font12;height: $font12 ;position: absolute;top: 0.83333vw;left: 2vw;}
             .play_stop.active{display: none;}
         }
     }

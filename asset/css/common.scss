@@ -126,8 +126,6 @@ body{font-family: NtSansKR, Bah; color: #000; font-weight: 500;word-break: keep-
         }
     }
 
-
-
 .opacity{
     display: none;position: fixed;top: 0;right: 0;height: 100vh;z-index: 1000;width: 100%;background: rgba(0, 0, 0, .8);
     #navigation{
@@ -150,81 +148,11 @@ body{font-family: NtSansKR, Bah; color: #000; font-weight: 500;word-break: keep-
             position: absolute;bottom: 0;width:100px;}
         }
 
-        @-webkit-keyframes redShape {
-            0% {
-              top:-150px;
-            }
-            100% {
-              top:85px;
-            }
-        }
-        @-webkit-keyframes yellowShape {
-                0% {
-                    left: 280px;
-                }
-                100% {
-                  left:135px;
-                }
-        }
-        @-webkit-keyframes blueShape {
-                0% {
-                    left: 0px;
-                }
-                100% {
-                  left:250px;
-                }
-        }
-
-        @-o-keyframes redShape {
-            0% {
-              top:-150px;
-            }
-            100% {
-              top:85px;
-            }
-        }
-        @-o-keyframes yellowShape {
-                0% {
-                    left: 280px;
-                }
-                100% {
-                  left:135px;
-                }
-        }
-        @-o-keyframes blueShape {
-                0% {
-                    left: 0px;
-                }
-                100% {
-                  left:250px;
-                }
-        }
-
-        @keyframes redShape {
-                0% {
-                 top:-150px;
-             }
-                100% {
-                    top:85px;
-                }
-        }
-        @keyframes yellowShape {
-                0% {
-                    left: 280px;
-                }
-                100% {
-                  left:135px;
-                }
-        }
-        @keyframes blueShape {
-                0% {
-                    left: 0px;
-                }
-                100% {
-                  left:250px;
-                }
-        }
+                     
         
+        
+
+
         .btn_close{
             position: relative; top: 4.166666666666667vw;left: 4.166666666666667vw;z-index: 2000;
             img{width: 6.666666666666667vw;height: 6.666666666666667vw;}
@@ -253,6 +181,100 @@ body{font-family: NtSansKR, Bah; color: #000; font-weight: 500;word-break: keep-
         }
 
     } 
+
+@media screen and (min-width : 768px){
+    .opacity #navigation > .topNav{
+
+        .red{
+            @include animation(redShapeIpad 2s infinite alternate);
+            top: -320px;left: 0;width:40%;}
+
+        .yellow{
+            @include animation(yellowShapeIpad 2s infinite alternate);
+            top: 96px;left: 280px;width:40%;}
+
+        .blue{
+            @include animation(blueShapeIpad 2s infinite alternate);
+            bottom: 4px;width: 30%;}
+        }   
+}
+
+@-webkit-keyframes redShapeIpad {
+        0% {top: -390px;}
+        100% {top: 19px;}
+}
+@-webkit-keyframes yellowShapeIpad {
+        0% {left: 487px;}
+        100% {left: 261px;}
+}
+@-webkit-keyframes blueShapeIpad {
+        0% {left: 0px;}
+        100% {left: 430px;}
+}
+
+@-o-keyframes redShapeIpad {
+    0% {top: -390px;}
+    100% {top: 19px;}
+}
+@-o-keyframes yellowShapeIpad {
+        0% {left: 487px;}
+        100% {left: 261px;}
+}
+@-o-keyframes blueShapeIpad {
+        0% {left: 0px;}
+        100% {left: 430px;}
+}
+
+@keyframes redShapeIpad {
+        0% {top: -390px;}
+        100% {top: 19px;}
+}
+@keyframes yellowShapeIpad {
+        0% {left: 487px;}
+        100% {left: 261px;}
+}
+@keyframes blueShapeIpad {
+        0% {left: 0px;}
+        100% {left: 430px;}
+}  
+@-webkit-keyframes redShape {
+    0% {top:-150px;}
+    100% {top:85px;}
+}
+@-webkit-keyframes yellowShape {
+        0% {left: 280px;}
+        100% {left:135px;}
+}
+@-webkit-keyframes blueShape {
+        0% {left: 0px;}
+        100% {left:250px;}
+}
+
+@-o-keyframes redShape {
+    0% {top:-150px;}
+    100% {top:85px;}
+}
+@-o-keyframes yellowShape {
+        0% {left: 280px;}
+        100% {left:135px;}
+}
+@-o-keyframes blueShape {
+        0% {left: 0px;}
+        100% {left:250px;}
+}
+
+@keyframes redShape {
+        0% {top:-150px;}
+        100% {top:85px;}
+}
+@keyframes yellowShape {
+        0% {left: 280px;}
+        100% {left:135px;}
+}
+@keyframes blueShape {
+        0% {left: 0px;}
+        100% {left:250px;}
+}  
 
 .modal{ 
         display:none;position: fixed;top: 0;right: 0;height: 100vh;width: 100%;background:#000;z-index: 2000;color: #fff;

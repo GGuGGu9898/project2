@@ -142,8 +142,8 @@ body {
   #header .btn_menu {
     right: 0; }
     #header .btn_menu .line {
-      -webkit-border-radius: 0 0.8333333333vw 0 0;
-      border-radius: 0 0.8333333333vw 0 0;
+      -webkit-border-radius: 0 0.8333333333vw 0 0 !important;
+      border-radius: 0 0.8333333333vw 0 0 !important;
       position: absolute;
       right: 3.611111111111111vw;
       width: 8.333333333333333vw;
@@ -197,6 +197,111 @@ body {
         position: absolute;
         bottom: 0;
         width: 100px; }
+    .opacity #navigation .btn_close {
+      position: relative;
+      top: 4.166666666666667vw;
+      left: 4.166666666666667vw;
+      z-index: 2000; }
+      .opacity #navigation .btn_close img {
+        width: 6.666666666666667vw;
+        height: 6.666666666666667vw; }
+    .opacity #navigation .membership {
+      float: right;
+      margin: 5.555555555555556vw 4.722222222222222vw; }
+      .opacity #navigation .membership li {
+        float: left;
+        margin: 1.388888888888889vw; }
+        .opacity #navigation .membership li a {
+          font-size: 2.388889vw; }
+  .opacity nav .snsList {
+    float: right;
+    position: absolute;
+    bottom: 11.611112vw;
+    right: -43.833334vw; }
+    .opacity nav .snsList li {
+      float: left; }
+    .opacity nav .snsList li + li {
+      margin-left: 1.1vw; }
+  .opacity nav ul {
+    padding: 5.333333333333333vw;
+    position: absolute;
+    height: 60vmin;
+    width: 60vmin;
+    bottom: 0;
+    right: 0; }
+    .opacity nav ul li {
+      line-height: 8vw;
+      font-size: 8vw;
+      margin-bottom: 4.8vw;
+      text-align: right;
+      font-weight: 600; }
+
+@media screen and (min-width: 768px) {
+  .opacity #navigation > .topNav .red {
+    -webkit-animation: redShapeIpad 2s infinite alternate;
+    -o-animation: redShapeIpad 2s infinite alternate;
+    animation: redShapeIpad 2s infinite alternate;
+    top: -320px;
+    left: 0;
+    width: 40%; }
+  .opacity #navigation > .topNav .yellow {
+    -webkit-animation: yellowShapeIpad 2s infinite alternate;
+    -o-animation: yellowShapeIpad 2s infinite alternate;
+    animation: yellowShapeIpad 2s infinite alternate;
+    top: 96px;
+    left: 280px;
+    width: 40%; }
+  .opacity #navigation > .topNav .blue {
+    -webkit-animation: blueShapeIpad 2s infinite alternate;
+    -o-animation: blueShapeIpad 2s infinite alternate;
+    animation: blueShapeIpad 2s infinite alternate;
+    bottom: 4px;
+    width: 30%; } }
+@-webkit-keyframes redShapeIpad {
+  0% {
+    top: -390px; }
+  100% {
+    top: 19px; } }
+@-webkit-keyframes yellowShapeIpad {
+  0% {
+    left: 487px; }
+  100% {
+    left: 261px; } }
+@-webkit-keyframes blueShapeIpad {
+  0% {
+    left: 0px; }
+  100% {
+    left: 430px; } }
+@-o-keyframes redShapeIpad {
+  0% {
+    top: -390px; }
+  100% {
+    top: 19px; } }
+@-o-keyframes yellowShapeIpad {
+  0% {
+    left: 487px; }
+  100% {
+    left: 261px; } }
+@-o-keyframes blueShapeIpad {
+  0% {
+    left: 0px; }
+  100% {
+    left: 430px; } }
+@keyframes redShapeIpad {
+  0% {
+    top: -390px; }
+  100% {
+    top: 19px; } }
+@keyframes yellowShapeIpad {
+  0% {
+    left: 487px; }
+  100% {
+    left: 261px; } }
+@keyframes blueShapeIpad {
+  0% {
+    left: 0px; }
+  100% {
+    left: 430px; } }
 @-webkit-keyframes redShape {
   0% {
     top: -150px; }
@@ -242,45 +347,6 @@ body {
     left: 0px; }
   100% {
     left: 250px; } }
-    .opacity #navigation .btn_close {
-      position: relative;
-      top: 4.166666666666667vw;
-      left: 4.166666666666667vw;
-      z-index: 2000; }
-      .opacity #navigation .btn_close img {
-        width: 6.666666666666667vw;
-        height: 6.666666666666667vw; }
-    .opacity #navigation .membership {
-      float: right;
-      margin: 5.555555555555556vw 4.722222222222222vw; }
-      .opacity #navigation .membership li {
-        float: left;
-        margin: 1.388888888888889vw; }
-        .opacity #navigation .membership li a {
-          font-size: 2.388889vw; }
-  .opacity nav .snsList {
-    float: right;
-    position: absolute;
-    bottom: 11.611112vw;
-    right: -43.833334vw; }
-    .opacity nav .snsList li {
-      float: left; }
-    .opacity nav .snsList li + li {
-      margin-left: 1.1vw; }
-  .opacity nav ul {
-    padding: 5.333333333333333vw;
-    position: absolute;
-    height: 60vmin;
-    width: 60vmin;
-    bottom: 0;
-    right: 0; }
-    .opacity nav ul li {
-      line-height: 8vw;
-      font-size: 8vw;
-      margin-bottom: 4.8vw;
-      text-align: right;
-      font-weight: 600; }
-
 .modal {
   display: none;
   position: fixed;

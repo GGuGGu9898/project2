@@ -248,8 +248,6 @@
   transform: scale(0.33);
 }
 .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
   display: inline-block;
   border-radius: 100%;
   background: #000;

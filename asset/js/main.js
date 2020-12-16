@@ -6,7 +6,6 @@ $(document).ready(function () {
           el: '.swiper-pagination',
           type: 'bullets',
           clickable : 'boolean',
-          bulletElement : 'string'
           //bullet 타입일 경우 버튼 클릭시 이동 가능함  
           },//자동실행
           autoplay: { 

@@ -1,6 +1,6 @@
 .top_visual {
-  height: 40vh;
-  min-height: 300px; }
+  height: 60vh;
+  min-height: 40vh; }
   .top_visual .swiper-container {
     height: 100%; }
     .top_visual .swiper-container .swiper-slide {
@@ -20,37 +20,42 @@
       .top_visual .swiper-container .swiper-slide.exPic4 {
         background-image: url("../images/exhibition/4.png"); }
     .top_visual .swiper-container .controller {
-      -webkit-border-radius: 0 27px 0 0;
-      border-radius: 0 27px 0 0;
+      -webkit-border-radius: 0 7.5vw 0 0 !important;
+      border-radius: 0 7.5vw 0 0 !important;
       position: absolute;
-      bottom: 18px;
-      left: calc(50% - 37px);
-      height: 19px;
-      width: 74px;
-      background-color: rgba(0, 0, 0, 0.5);
+      bottom: 10vw;
+      left: calc(50% - 10.277777vw);
+      height: 5.277777vw;
+      width: 20.55555vw;
+      background-color: rgba(0, 0, 0, 0.7);
       z-index: 90; }
       .top_visual .swiper-container .controller .swiper-pagination {
-        left: 25px;
+        left: 6.6666666vw;
         top: 0; }
       .top_visual .swiper-container .controller .swiper-pagination-bullet {
-        width: 3px;
-        height: 3px;
+        -webkit-border-radius: 10vw !important;
+        border-radius: 10vw !important;
+        width: 1vw;
+        height: 1vw;
         background: #fff;
         opacity: 0.5;
-        margin: 8px 3px; }
-      .top_visual .swiper-container .controller .swiper-pagination-bullet.active {
-        opacity: 1; }
+        margin: 2.22222vw 0.833333vw; }
+      .top_visual .swiper-container .controller .swiper-pagination-bullet-active {
+        -webkit-border-radius: 10vw !important;
+        border-radius: 10vw !important;
+        opacity: 1;
+        background: #fff !important; }
       .top_visual .swiper-container .controller .autostop {
-        background-image: url("../images/index/icon/stop.png"); }
+        background-image: url("../images/common/stopBtn.svg"); }
       .top_visual .swiper-container .controller .autoplay {
-        background-image: url("../images/index/icon/play.png");
+        background-image: url("../images/common/playBtn.svg");
         display: none; }
       .top_visual .swiper-container .controller .play_stop {
-        width: 12px;
-        height: 12px;
+        width: 3.3333333333vw;
+        height: 3.3333333333vw;
         position: absolute;
-        top: 3px;
-        left: 9px; }
+        top: 0.83333vw;
+        left: 2vw; }
       .top_visual .swiper-container .controller .play_stop.active {
         display: none; }
 

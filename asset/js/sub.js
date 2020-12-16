@@ -8,7 +8,7 @@ $(document).ready(function () {
           el: '.swiper-pagination',
           type: 'bullets',
           clickable : 'boolean',
-          bulletElement : 'string'
+          //bulletElement : 'span'
           //bullet 타입일 경우 버튼 클릭시 이동 가능함  
           },//자동실행
           autoplay: { 
@@ -20,18 +20,18 @@ $(document).ready(function () {
 
         $('.top_visual .swiper-container .controller .autostop').on('click', function(){
         $(this).hide().siblings().show();
-        mySwiper1.autoplay.stop();
+        mySwiper4.autoplay.stop();
         return false;
         });
         
         $('.top_visual .swiper-container .controller .autoplay').on('click', function(){
         $(this).hide().siblings().show();
-        mySwiper1.autoplay.start();
+        mySwiper4.autoplay.start();
         return false;
         });
 
         //두번째 슬라이드
-        var mySwiper4 = new Swiper('.exOne .swiper-container', {
+        var mySwiper5 = new Swiper('.exOne .swiper-container', {
           pagination: {
             el: '.swiper-pagination',
             type: 'fraction',
